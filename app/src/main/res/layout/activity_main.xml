@@ -6,11 +6,10 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/tvDisplay"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:textSize="28sp"
-        android:background="#EEEEEE"
+        android:layout_height="100dp"
+        android:textSize="32sp"
         android:gravity="end|center_vertical"
         android:padding="10dp"
         android:text="" />
