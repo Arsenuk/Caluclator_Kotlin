@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="28sp"
+        android:background="#EEEEEE"
+        android:gravity="end|center_vertical"
+        android:padding="10dp"
+        android:text="" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <!-- Ряд 1 -->
+        <Button android:text="7" android:onClick="onClick" />
+        <Button android:text="8" android:onClick="onClick" />
+        <Button android:text="9" android:onClick="onClick" />
+        <Button android:text="/" android:onClick="onClick" />
+
+        <!-- Ряд 2 -->
+        <Button android:text="4" android:onClick="onClick" />
+        <Button android:text="5" android:onClick="onClick" />
+        <Button android:text="6" android:onClick="onClick" />
+        <Button android:text="*" android:onClick="onClick" />
+
+        <!-- Ряд 3 -->
+        <Button android:text="1" android:onClick="onClick" />
+        <Button android:text="2" android:onClick="onClick" />
+        <Button android:text="3" android:onClick="onClick" />
+        <Button android:text="-" android:onClick="onClick" />
+
+        <!-- Ряд 4 -->
+        <Button android:text="0" android:onClick="onClick" />
+        <Button android:text="C" android:onClick="onClick" />
+        <Button android:text="=" android:onClick="onClick" />
+        <Button android:text="+" android:onClick="onClick" />
+
+    </GridLayout>
+
+</LinearLayout>
